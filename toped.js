@@ -1,6 +1,6 @@
 var list_jualan = "https://www.tokopedia.com/cozymart/kacamata-locs-original";
 
-var x = document.getElementsById("dink-it");
+var x = document.getElementById("dink-it");
  
 var consolePush = function(){console.log("consolePush")};
 
