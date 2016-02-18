@@ -1,0 +1,13 @@
+var date = new Date();
+console.log("Mulai: "+ date);
+setInterval (function(){
+	var link = document.getElementsByClassName("btn btn--orange btn--medium btn--block");
+	var actualLink = link.length;
+	var digit = Math.floor((Math.random() * actualLink) + 1);
+	var date = new Date();
+	console.log(digit + " Push di:  "+ link[digit] + "  Waktu: " +  date); 
+	var clickPush = function(){
+		link[digit].click();
+		};
+	clickPush();
+},600 * 1000);
