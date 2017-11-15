@@ -1,0 +1,36 @@
+var link = [];
+link[0] = "https://www.tokopedia.com/cozymart/233zl-zippo-red-matte-logo";
+link[1] = "https://www.tokopedia.com/cozymart/kacamata-locs-hardcore-shades-og-gangster-original-91021";
+link[2] = "https://www.tokopedia.com/cozymart/kacamata-locs-hardcore-shades-og-gangster-original-91018";
+link[3] = "https://www.tokopedia.com/cozymart/kacamata-locs-hardcore-shades-og-gangster-original-9006";
+link[4] = "https://www.tokopedia.com/cozymart/kacamata-locs-hardcore-shades-og-gangster-original-9005";
+link[5] = "https://www.tokopedia.com/cozymart/kacamata-locs-original";
+link[6] = "https://www.tokopedia.com/cozymart/water-sports-booties-socks-hitam-1-pasang";
+link[7] = "https://www.tokopedia.com/cozymart/zippo-neon-pink-28886";
+link[8] = "https://www.tokopedia.com/cozymart/zippo-high-polish-chrome-250";
+link[9] = "https://www.tokopedia.com/cozymart/zippo-neon-yellow-28887";
+
+var x = document.getElementById("dink-it");
+var clickPush = function(){x.click();};
+var consolePush = function(){console.log("consolePush")};
+var Popup = document.getElementsByClassName("dialog-close jqmClose");
+var closePopup = function(){Popup[0].click();};
+	
+setTimeout( function(){ 
+	var date = new Date();
+    console.log("Auto Promo start pada: " + date);  
+	clickPush();
+    },10 * 1000);
+
+setInterval( function(){
+	var date = new Date();
+	var dateH = date.getHours();
+	var dateM = date.getMinutes();
+	var tipsContent = document.getElementsByClassName("tips")[0].textContent;
+	var limitPromo = tipsContent.slice (- 5);	// return 00:00
+	var limitPromoHours = limitPromo.substring(1,2);
+	console.log("Aktual limit promo sampai: "+ limitPromo + " jam sekarang: " + date);
+    },60 * 1000);
+ 
+    
+    },600 * 1000);
